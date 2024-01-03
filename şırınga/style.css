@@ -1,0 +1,149 @@
+body {
+ background: url(WhatsApp\ Image\ 2024-01-03\ at\ 23.33.56.jpeg);
+ background-size: cover;
+  }
+  
+  .title {
+    color: #000000;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  
+  .container {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 15%;
+    
+
+  }
+  
+  .syringe {
+    width: 80px;
+    height: 300px;
+    background-color: #868282;
+    border: 5px solid #fff;
+    position: relative;
+  }
+  
+  .syringe:after,
+  .syringe:before {
+    content: '';
+    position: absolute;
+    background-color: #fff;
+  }
+  
+  .syringe:after {
+    width: 140%;
+    height: 20px;
+    top: -10px;
+    left: -20%;
+  }
+  
+  .syringe:before {
+    width: 10%;
+    height: 120px;
+    position: absolute;
+    bottom: -120px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    right: 37px;
+  }
+  
+  
+  .syringe-inside {
+    width: 100%;
+    height: 10%;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    bottom: 10%;
+    animation: move-syringe-inside 10s infinite;
+  }
+  
+  .syringe-inside:after,
+  .syringe-inside:before {
+    content: '';
+    position: absolute;
+    background-color: rgb(255, 0, 0);
+  }
+  
+  .syringe-inside:after {
+    width: 20%;
+    height: 250px;
+    top: -250px;
+    left: 40%;
+  }
+  
+  .syringe-inside:before {
+    width: 120%;
+    height: 20px;
+    top: -270px;
+    left: -10%;
+  }
+  
+  .blood {
+    width: 100%;
+    height: 10%;
+    background-color: #39f021;
+    position: absolute;
+    bottom: 0;
+    animation: move-blood 10s infinite;
+  }
+  
+  @keyframes move-syringe-inside {
+    0% {
+      bottom: 10%;
+    }
+    50% {
+      bottom: 80%;
+    }
+    100% {
+      bottom: 10%;
+    }
+  }
+  
+  @keyframes move-blood {
+    0% {
+      height: 10%;
+    }
+    50% {
+      height: 80%;
+    }
+    100% {
+      height: 10%;
+    }
+  }
+  
+  @keyframes move-face {
+    0% {
+      height: 5px;
+      bottom: 25%;
+      transform: rotate(-10deg);
+    }
+    50% {
+      height: 25px;
+      bottom: 20%;
+      transform: rotate(0deg);
+    }
+    100% {
+      height: 5px;
+      bottom: 25%;
+      transform: rotate(-10deg);
+    }
+  }
+  
+  @keyframes move-eye-brown {
+    0% {
+      top: 0;
+    }
+    50% {
+      top: -10px;
+      transform: rotate(0deg);
+    }
+    100% {
+      top: 0;
+    }
+  }
+  
